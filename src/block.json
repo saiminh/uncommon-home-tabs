@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/uncommon-tabs",
+	"version": "0.1.0",
+	"title": "Uncommon Home People",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"supports": {
+		"html": false
+	},
+  "attributes": {
+    "tabs": {
+      "type": "array",
+      "default": [
+        {
+          "title": "Tab 1",
+          "content": "Tab 1 content"
+        },
+        {
+          "title": "Tab 2",
+          "content": "Tab 2 content"
+        },
+        {
+          "title": "Tab 3",
+          "content": "Tab 3 content"
+        }
+      ]
+    }
+  },
+	"textdomain": "uncommon-tabs",
+	"editorScript": "file:./index.js",
+  "viewScript": "file:./view.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

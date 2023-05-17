@@ -1,0 +1,62 @@
+.uncommon-tabs-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  counter-reset: tab-counter;
+
+  @media screen and (max-width: 599px){
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+.uncommon-tab-title {
+  text-decoration: none;
+  color: var(--wp--preset--color--pigment-purple)!important;
+  flex: 1 1 100%;
+  padding-top: 0.5rem;
+  border-top: 2px solid transparent;
+
+  &::before {
+    content: counter(tab-counter, decimal-leading-zero);
+    counter-increment: tab-counter;
+    display: block;
+
+    @media screen and (max-width: 599px){
+      display: inline;
+      margin-right: .5em;
+    }
+  }
+  
+  &.active {
+    color: var(--wp--preset--color--gallery-off-white)!important;
+    border-color: var(--wp--preset--color--gallery-off-white);
+    text-decoration: none;
+  }
+}
+.uncommon-tab-content {
+  display: none;
+  font-size: var(--wp--preset--font-size--h-4);
+  color: var(--wp--preset--color--gallery-off-white);
+  line-height: 1.1;
+
+  &.active {
+    display: block;
+    animation: fadeIn 1s both;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.uncommon-tab-content-wrapper {
+  margin-top: 4rem;
+
+  @media screen and (max-width: 599px) {
+    margin-top: 2rem;
+  }
+}
