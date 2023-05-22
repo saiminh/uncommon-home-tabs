@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.uncommon-tab-title');
     const tabContent = document.querySelectorAll('.uncommon-tab-content');
     tabs[0].classList.add('active');

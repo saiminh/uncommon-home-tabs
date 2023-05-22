@@ -1,1 +1,0 @@
-{"version":3,"file":"index.css","mappings":";;;AAAA;EACE;AACF;;AACA;EACE;AAEF,C","sources":["webpack://uncommon-tabs/./src/editor.scss"],"sourcesContent":[".uncommon-tabs-wrapper {\n  counter-reset: tab-counter;\n}\n.uncommon-tab-content {\n  display: block;\n}"],"names":[],"sourceRoot":""}
