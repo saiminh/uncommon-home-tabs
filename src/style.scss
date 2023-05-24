@@ -17,6 +17,11 @@
   padding-top: 0.5rem;
   border-top: 2px solid transparent;
   font-size: var(--wp--preset--font-size--body-m);
+  
+  @media screen and (max-width: 599px){
+    font-size: var(--wp--preset--font-size--body-l);
+    padding-bottom: 0.5rem;
+  }
 
   &::before {
     content: counter(tab-counter, decimal-leading-zero);
@@ -43,10 +48,10 @@
 
   &.active {
     display: block;
-    animation: fadeIn 1s both;
+    animation: uncommon-tab-content-fadeIn 1s both;
   }
 }
-@keyframes fadeIn {
+@keyframes uncommon-tab-content-fadeIn {
   from {
     opacity: 0;
   }
