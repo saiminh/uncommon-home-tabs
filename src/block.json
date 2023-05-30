@@ -5,8 +5,8 @@
 	"version": "0.1.0",
 	"title": "Uncommon Home People",
 	"category": "widgets",
-	"icon": "smiley",
-	"description": "Example block scaffolded with Create Block tool.",
+	"icon": "table-row-after",
+	"description": "Tabbed content",
 	"supports": {
 		"html": false
 	},

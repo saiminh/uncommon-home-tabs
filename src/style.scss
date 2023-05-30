@@ -42,13 +42,19 @@
 }
 .uncommon-tab-content {
   display: none;
-  font-size: var(--wp--preset--font-size--h-4);
   color: var(--wp--preset--color--gallery-off-white);
+  font-size: var(--wp--preset--font-size--h-4);
   line-height: 1.1;
-
+  
   &.active {
     display: block;
     animation: uncommon-tab-content-fadeIn 1s both;
+  }
+  & p {
+    color: var(--wp--preset--color--gallery-off-white);
+    font-size: var(--wp--preset--font-size--h-4);
+    line-height: 1.1;
+
   }
 }
 @keyframes uncommon-tab-content-fadeIn {
